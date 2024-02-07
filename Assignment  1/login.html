@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="https://kit.fontawesome.com/2fe2e028da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form id="signupForm">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Name" id="signupName">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="signupEmail">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="signupPassword">
+                    </div>
+                </div>
+            </form>
+            <div class="validation-message" id="signupMessage"></div>
+            <div class="btn-field">
+                <button type="button" class="js-btn-field" id="signupBtn" onclick="signup()">Sign Up</button>
+                <button type="button" id="signinBtn" class="disable js-btn-field" onclick="signin()">Sign in</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/loginpage.js"></script>
+</body>
+</html>
